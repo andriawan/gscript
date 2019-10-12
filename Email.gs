@@ -4,7 +4,7 @@ var sendMail = function(email, subject, body) {
     var email = 'john.doe@example.com';
     var subject = 'Hello world Again and gain';
     var body = '<h1>Some one test your script</h1>';
-    MailApp.sendEmail({to:email, subject:subject, htmlBody:body});
+    GmailApp.sendEmail(email, subject, body);
     return 'Email sent.';
   }
   return 'Your quota remain is 0';
